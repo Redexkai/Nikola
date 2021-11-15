@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages { 'First Stage'
+        steps{
+            script {
+               if (params.OPERATION == "sum") {
+     println(params.FIRST_NUMBER.tointeger() + params.SECOND_NUMBER.tointeger())
+ } else if (params.OPERATION == "sub") {
+     println(params.FIRST_NUMBER. tointeger() - params.SECOND_NUMBER.tointeger())
+ } else if(params.OPERATION == "product") {
+     println(params.FIRST_NUMBER.tointeger() * params.SECOND_NUMBER.tointeger())
+ } else{
+     println(params.FIRST_NUMBER.tointeger() / params.SECOND_NUMBER.tointeger()) 
+
+                }
+             
+            }
+        }
+    }
+}
