@@ -5,13 +5,13 @@ pipeline {
         steps{
             script {
                if (params.OPERATION == "sum") {
-     println(params.FIRST_NUMBER.tointeger() + params.SECOND_NUMBER.tointeger())
+     println(params.FIRST_NUMBER.toInteger() + params.SECOND_NUMBER.toInteger())
  } else if (params.OPERATION == "sub") {
-     println(params.FIRST_NUMBER. tointeger() - params.SECOND_NUMBER.tointeger())
+     println(params.FIRST_NUMBER. toInteger() - params.SECOND_NUMBER.toInteger())
  } else if(params.OPERATION == "product") {
-     println(params.FIRST_NUMBER.tointeger() * params.SECOND_NUMBER.tointeger())
+     println(params.FIRST_NUMBER.toInteger() * params.SECOND_NUMBER.toInteger())
  } else{
-     println(params.FIRST_NUMBER.tointeger() / params.SECOND_NUMBER.tointeger()) 
+     println(params.FIRST_NUMBER.toInteger() / params.SECOND_NUMBER.toInteger()) 
 
                 }
              
